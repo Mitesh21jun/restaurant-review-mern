@@ -35,7 +35,7 @@ export default class ReviewsDAO {
     try {
       const updateResponse = await reviews.updateOne(
         {
-          user_id: iserId,
+          user_id: userId,
           _id: ObjectId(reviewId),
         },
         { $set: { text: text, date: date } }
