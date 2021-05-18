@@ -10,7 +10,7 @@ export default class ReviewsDAO {
       return;
     }
     try {
-      reviews = await conn.db(process.env.RESTREVIEWS_NS).collection("review");
+      reviews = await conn.db(process.env.RESTREVIEWS_NS).collection("reviews");
     } catch (e) {
       console.error(`Unable to establish collection handles in userDAO: ${e}`);
     }
