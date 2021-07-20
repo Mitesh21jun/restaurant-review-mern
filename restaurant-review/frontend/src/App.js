@@ -6,7 +6,6 @@ import AddReview from "./components/add-review";
 import Restaurants from "./components/restaurants";
 import RestaurantsList from "./components/restaurants-list";
 import Login from "./components/login";
-import { async } from "regenerator-runtime";
 
 function App() {
   const [user, setUser] = useState(null);
